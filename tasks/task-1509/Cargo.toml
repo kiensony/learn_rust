@@ -1,0 +1,15 @@
+[package]
+name = "task_1509"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[workspace]
+members = ["units"]
+resolver = "3"
+
+[workspace.dependencies]
+units = { path = "unit" }
+
+[dependencies]
+units.workspace = true

@@ -1,0 +1,519 @@
+code	coverage	exercise	sample	context	reason	source
+E0001	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0001.html
+E0002	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0002.html
+E0004	direct	task-658	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0004.html
+E0005	direct	task-707	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0005.html
+E0007	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0007.html
+E0009	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0009.html
+E0010	clinic	clinic/E0010	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0010.html
+E0013	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0013.html
+E0014	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0014.html
+E0015	clinic	clinic/E0015	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0015.html
+E0023	direct	task-663	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0023.html
+E0025	clinic	clinic/E0025	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0025.html
+E0026	clinic	clinic/E0026	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0026.html
+E0027	clinic	clinic/E0027	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0027.html
+E0029	clinic	clinic/E0029	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0029.html
+E0030	clinic	clinic/E0030	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0030.html
+E0033	shared-cause	task-1103	-1	-	A trait object's concrete size is erased. Practice retaining a pointer to a dyn object. The reference snippet uses a trait name supplied by its surrounding example.	https://doc.rust-lang.org/error_codes/E0033.html
+E0034	clinic	clinic/E0034	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0034.html
+E0038	clinic	clinic/E0038	2	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0038.html
+E0040	direct	task-316	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0040.html
+E0044	clinic	clinic/E0044	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0044.html
+E0045	clinic	clinic/E0045	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0045.html
+E0046	direct	task-1054	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0046.html
+E0049	clinic	clinic/E0049	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0049.html
+E0050	clinic	clinic/E0050	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0050.html
+E0053	direct	task-1059	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0053.html
+E0054	direct	task-113	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0054.html
+E0055	clinic	clinic/E0055	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0055.html
+E0057	direct	task-905	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0057.html
+E0059	clinic	clinic/E0059	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0059.html
+E0060	clinic	clinic/E0060	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0060.html
+E0061	direct	task-262	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0061.html
+E0062	direct	task-609	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0062.html
+E0063	clinic	clinic/E0063	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0063.html
+E0067	clinic	clinic/E0067	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0067.html
+E0069	direct	task-267	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0069.html
+E0070	clinic	clinic/E0070	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0070.html
+E0071	clinic	clinic/E0071	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0071.html
+E0072	clinic	clinic/E0072	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0072.html
+E0073	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0073.html
+E0074	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0074.html
+E0075	clinic	clinic/E0075	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0075.html
+E0076	clinic	clinic/E0076	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0076.html
+E0077	clinic	clinic/E0077	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0077.html
+E0080	clinic	clinic/E0080	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0080.html
+E0081	direct	task-2403	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0081.html
+E0084	clinic	clinic/E0084	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0084.html
+E0087	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0087.html
+E0088	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0088.html
+E0089	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0089.html
+E0090	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0090.html
+E0091	clinic	clinic/E0091	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0091.html
+E0092	clinic	clinic/E0092	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0092.html
+E0093	clinic	clinic/E0093	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0093.html
+E0094	clinic	clinic/E0094	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0094.html
+E0106	direct	task-560	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0106.html
+E0107	direct	task-1010	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0107.html
+E0109	clinic	clinic/E0109	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0109.html
+E0110	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0110.html
+E0116	clinic	clinic/E0116	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0116.html
+E0117	direct	task-1127	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0117.html
+E0118	clinic	clinic/E0118	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0118.html
+E0119	clinic	clinic/E0119	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0119.html
+E0120	clinic	clinic/E0120	1	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0120.html
+E0121	clinic	clinic/E0121	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0121.html
+E0124	clinic	clinic/E0124	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0124.html
+E0128	clinic	clinic/E0128	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0128.html
+E0130	clinic	clinic/E0130	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0130.html
+E0131	clinic	clinic/E0131	0	binary	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0131.html
+E0132	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0132.html
+E0133	clinic	clinic/E0133	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0133.html
+E0136	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0136.html
+E0137	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0137.html
+E0138	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0138.html
+E0139	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0139.html
+E0152	clinic	clinic/E0152	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0152.html
+E0154	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0154.html
+E0158	clinic	clinic/E0158	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0158.html
+E0161	clinic	clinic/E0161	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0161.html
+E0162	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0162.html
+E0164	clinic	clinic/E0164	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0164.html
+E0165	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0165.html
+E0170	clinic	clinic/E0170	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0170.html
+E0178	clinic	clinic/E0178	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0178.html
+E0183	clinic	clinic/E0183	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0183.html
+E0184	clinic	clinic/E0184	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0184.html
+E0185	clinic	clinic/E0185	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0185.html
+E0186	clinic	clinic/E0186	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0186.html
+E0191	clinic	clinic/E0191	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0191.html
+E0192	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0192.html
+E0193	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0193.html
+E0195	clinic	clinic/E0195	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0195.html
+E0197	clinic	clinic/E0197	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0197.html
+E0198	clinic	clinic/E0198	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0198.html
+E0199	clinic	clinic/E0199	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0199.html
+E0200	clinic	clinic/E0200	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0200.html
+E0201	clinic	clinic/E0201	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0201.html
+E0203	clinic	clinic/E0203	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0203.html
+E0204	clinic	clinic/E0204	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0204.html
+E0205	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0205.html
+E0206	clinic	clinic/E0206	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0206.html
+E0207	clinic	clinic/E0207	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0207.html
+E0208	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0208.html
+E0210	toolchain		-1	-	This orphan-rule example uses a trait from a second crate and type parameters whose coverage depends on the local type's position.	https://doc.rust-lang.org/error_codes/E0210.html
+E0211	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0211.html
+E0212	clinic	clinic/E0212	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0212.html
+E0214	clinic	clinic/E0214	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0214.html
+E0220	clinic	clinic/E0220	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0220.html
+E0221	clinic	clinic/E0221	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0221.html
+E0222	clinic	clinic/E0222	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0222.html
+E0223	clinic	clinic/E0223	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0223.html
+E0224	clinic	clinic/E0224	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0224.html
+E0225	clinic	clinic/E0225	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0225.html
+E0226	clinic	clinic/E0226	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0226.html
+E0227	clinic	clinic/E0227	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0227.html
+E0228	clinic	clinic/E0228	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0228.html
+E0229	clinic	clinic/E0229	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0229.html
+E0230	clinic	clinic/E0230	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0230.html
+E0231	clinic	clinic/E0231	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0231.html
+E0232	clinic	clinic/E0232	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0232.html
+E0243	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0243.html
+E0244	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0244.html
+E0251	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0251.html
+E0252	clinic	clinic/E0252	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0252.html
+E0253	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0253.html
+E0254	clinic	clinic/E0254	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0254.html
+E0255	clinic	clinic/E0255	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0255.html
+E0256	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0256.html
+E0259	clinic	clinic/E0259	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0259.html
+E0260	clinic	clinic/E0260	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0260.html
+E0261	clinic	clinic/E0261	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0261.html
+E0262	clinic	clinic/E0262	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0262.html
+E0263	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0263.html
+E0264	clinic	clinic/E0264	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0264.html
+E0267	clinic	clinic/E0267	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0267.html
+E0268	clinic	clinic/E0268	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0268.html
+E0271	clinic	clinic/E0271	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0271.html
+E0275	clinic	clinic/E0275	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0275.html
+E0276	clinic	clinic/E0276	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0276.html
+E0277	direct	task-805	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0277.html
+E0281	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0281.html
+E0282	direct	task-756	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0282.html
+E0283	clinic	clinic/E0283	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0283.html
+E0284	clinic	clinic/E0284	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0284.html
+E0297	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0297.html
+E0301	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0301.html
+E0302	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0302.html
+E0303	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0303.html
+E0307	clinic	clinic/E0307	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0307.html
+E0308	direct	task-053	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0308.html
+E0309	clinic	clinic/E0309	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0309.html
+E0310	clinic	clinic/E0310	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0310.html
+E0311	clinic	clinic/E0311	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0311.html
+E0312	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0312.html
+E0316	clinic	clinic/E0316	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0316.html
+E0317	direct	task-163	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0317.html
+E0320	clinic	clinic/E0320	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0320.html
+E0321	clinic	clinic/E0321	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0321.html
+E0322	clinic	clinic/E0322	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0322.html
+E0323	clinic	clinic/E0323	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0323.html
+E0324	clinic	clinic/E0324	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0324.html
+E0325	clinic	clinic/E0325	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0325.html
+E0326	clinic	clinic/E0326	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0326.html
+E0328	clinic	clinic/E0328	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0328.html
+E0329	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0329.html
+E0364	clinic	clinic/E0364	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0364.html
+E0365	clinic	clinic/E0365	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0365.html
+E0366	clinic	clinic/E0366	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0366.html
+E0367	clinic	clinic/E0367	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0367.html
+E0368	clinic	clinic/E0368	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0368.html
+E0369	clinic	clinic/E0369	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0369.html
+E0370	clinic	clinic/E0370	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0370.html
+E0371	toolchain		-1	-	The reference uses pre-2021 bare trait object syntax. The 2024 edition diagnoses the missing dyn keyword before checking the redundant implementation.	https://doc.rust-lang.org/error_codes/E0371.html
+E0373	direct	task-1803	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0373.html
+E0374	clinic	clinic/E0374	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0374.html
+E0375	clinic	clinic/E0375	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0375.html
+E0376	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0376.html
+E0377	clinic	clinic/E0377	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0377.html
+E0378	clinic	clinic/E0378	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0378.html
+E0379	clinic	clinic/E0379	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0379.html
+E0380	clinic	clinic/E0380	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0380.html
+E0381	clinic	clinic/E0381	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0381.html
+E0382	direct	task-311	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0382.html
+E0383	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0383.html
+E0384	direct	task-069	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0384.html
+E0386	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0386.html
+E0387	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0387.html
+E0388	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0388.html
+E0389	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0389.html
+E0390	clinic	clinic/E0390	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0390.html
+E0391	clinic	clinic/E0391	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0391.html
+E0392	clinic	clinic/E0392	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0392.html
+E0393	clinic	clinic/E0393	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0393.html
+E0398	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0398.html
+E0399	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0399.html
+E0401	direct	task-1004	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0401.html
+E0403	clinic	clinic/E0403	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0403.html
+E0404	clinic	clinic/E0404	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0404.html
+E0405	clinic	clinic/E0405	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0405.html
+E0407	clinic	clinic/E0407	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0407.html
+E0408	clinic	clinic/E0408	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0408.html
+E0409	clinic	clinic/E0409	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0409.html
+E0411	clinic	clinic/E0411	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0411.html
+E0412	clinic	clinic/E0412	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0412.html
+E0415	clinic	clinic/E0415	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0415.html
+E0416	clinic	clinic/E0416	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0416.html
+E0422	clinic	clinic/E0422	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0422.html
+E0423	clinic	clinic/E0423	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0423.html
+E0424	direct	task-1703	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0424.html
+E0425	direct	task-020	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0425.html
+E0426	direct	task-212	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0426.html
+E0428	clinic	clinic/E0428	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0428.html
+E0429	clinic	clinic/E0429	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0429.html
+E0430	clinic	clinic/E0430	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0430.html
+E0431	clinic	clinic/E0431	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0431.html
+E0432	clinic	clinic/E0432	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0432.html
+E0433	clinic	clinic/E0433	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0433.html
+E0434	clinic	clinic/E0434	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0434.html
+E0435	clinic	clinic/E0435	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0435.html
+E0436	clinic	clinic/E0436	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0436.html
+E0437	clinic	clinic/E0437	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0437.html
+E0438	clinic	clinic/E0438	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0438.html
+E0439	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0439.html
+E0445	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0445.html
+E0446	clinic	clinic/E0446	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0446.html
+E0447	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0447.html
+E0448	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0448.html
+E0449	clinic	clinic/E0449	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0449.html
+E0451	clinic	clinic/E0451	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0451.html
+E0452	clinic	clinic/E0452	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0452.html
+E0453	clinic	clinic/E0453	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0453.html
+E0454	toolchain		-1	-	The reference's external block uses pre-2024 syntax. The 2024 edition requires unsafe extern blocks before it can validate an empty link name.	https://doc.rust-lang.org/error_codes/E0454.html
+E0455	toolchain		-1	-	Link kinds depend on the target. The reference names Apple frameworks, which use an Apple target's linker and conventions.	https://doc.rust-lang.org/error_codes/E0455.html
+E0457	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0457.html
+E0458	toolchain		-1	-	The 2024 parser rejects the published extern block before validating the native library link kind.	https://doc.rust-lang.org/error_codes/E0458.html
+E0459	toolchain		-1	-	The published native-link example needs an unsafe extern block in edition 2024 before the missing library name can be diagnosed.	https://doc.rust-lang.org/error_codes/E0459.html
+E0460	toolchain		-1	-	Requires separately compiled versions of a dependency and a downstream crate retaining the earlier metadata.	https://doc.rust-lang.org/error_codes/E0460.html
+E0461	toolchain		-1	-	Requires a dependency built for a second installed target and a downstream compile targeting the host.	https://doc.rust-lang.org/error_codes/E0461.html
+E0462	toolchain		-1	-	Requires a native static library on the dependency search path where rustc expects a Rust library artifact.	https://doc.rust-lang.org/error_codes/E0462.html
+E0463	clinic	clinic/E0463	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0463.html
+E0464	toolchain		-1	-	Requires two compiled artifacts with the same crate name on the dependency search path.	https://doc.rust-lang.org/error_codes/E0464.html
+E0466	clinic	clinic/E0466	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0466.html
+E0468	clinic	clinic/E0468	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0468.html
+E0469	clinic	clinic/E0469	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0469.html
+E0472	toolchain		-1	-	The x86-64 Linux host supports inline assembly. This diagnostic requires a target without that assembly support.	https://doc.rust-lang.org/error_codes/E0472.html
+E0476	clinic	clinic/E0476	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0476.html
+E0477	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0477.html
+E0478	toolchain		-1	-	The reference uses a pre-2021 bare trait object inside Box. Edition 2024 rejects that form before checking the outlives bound.	https://doc.rust-lang.org/error_codes/E0478.html
+E0482	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0482.html
+E0491	clinic	clinic/E0491	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0491.html
+E0492	clinic	clinic/E0492	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0492.html
+E0493	clinic	clinic/E0493	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0493.html
+E0495	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0495.html
+E0496	clinic	clinic/E0496	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0496.html
+E0497	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0497.html
+E0498	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0498.html
+E0499	clinic	clinic/E0499	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0499.html
+E0500	clinic	clinic/E0500	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0500.html
+E0501	clinic	clinic/E0501	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0501.html
+E0502	direct	task-410	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0502.html
+E0503	clinic	clinic/E0503	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0503.html
+E0504	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0504.html
+E0505	clinic	clinic/E0505	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0505.html
+E0506	clinic	clinic/E0506	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0506.html
+E0507	direct	task-360	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0507.html
+E0508	clinic	clinic/E0508	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0508.html
+E0509	clinic	clinic/E0509	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0509.html
+E0510	clinic	clinic/E0510	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0510.html
+E0511	toolchain		-1	-	The platform intrinsic and SIMD types used in the reference are feature-gated on stable 1.88.0.	https://doc.rust-lang.org/error_codes/E0511.html
+E0512	clinic	clinic/E0512	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0512.html
+E0514	toolchain		-1	-	Requires metadata produced by one rustc version to be read by a different version.	https://doc.rust-lang.org/error_codes/E0514.html
+E0515	direct	task-1153	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0515.html
+E0516	clinic	clinic/E0516	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0516.html
+E0517	clinic	clinic/E0517	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0517.html
+E0518	clinic	clinic/E0518	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0518.html
+E0519	toolchain		-1	-	Requires an independently built dependency with crate metadata identical to that of the invoking crate.	https://doc.rust-lang.org/error_codes/E0519.html
+E0520	clinic	clinic/E0520	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0520.html
+E0521	clinic	clinic/E0521	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0521.html
+E0522	clinic	clinic/E0522	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0522.html
+E0523	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0523.html
+E0524	clinic	clinic/E0524	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0524.html
+E0525	clinic	clinic/E0525	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0525.html
+E0527	direct	task-466	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0527.html
+E0528	clinic	clinic/E0528	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0528.html
+E0529	clinic	clinic/E0529	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0529.html
+E0530	clinic	clinic/E0530	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0530.html
+E0531	clinic	clinic/E0531	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0531.html
+E0532	clinic	clinic/E0532	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0532.html
+E0533	clinic	clinic/E0533	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0533.html
+E0534	clinic	clinic/E0534	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0534.html
+E0535	clinic	clinic/E0535	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0535.html
+E0536	clinic	clinic/E0536	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0536.html
+E0537	clinic	clinic/E0537	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0537.html
+E0538	clinic	clinic/E0538	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0538.html
+E0539	clinic	clinic/E0539	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0539.html
+E0541	clinic	clinic/E0541	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0541.html
+E0542	clinic	clinic/E0542	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0542.html
+E0543	clinic	clinic/E0543	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0543.html
+E0544	clinic	clinic/E0544	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0544.html
+E0545	clinic	clinic/E0545	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0545.html
+E0546	clinic	clinic/E0546	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0546.html
+E0547	clinic	clinic/E0547	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0547.html
+E0549	clinic	clinic/E0549	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0549.html
+E0550	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0550.html
+E0551	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0551.html
+E0552	clinic	clinic/E0552	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0552.html
+E0554	clinic	clinic/E0554	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0554.html
+E0556	clinic	clinic/E0556	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0556.html
+E0557	clinic	clinic/E0557	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0557.html
+E0559	clinic	clinic/E0559	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0559.html
+E0560	clinic	clinic/E0560	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0560.html
+E0561	clinic	clinic/E0561	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0561.html
+E0562	clinic	clinic/E0562	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0562.html
+E0565	clinic	clinic/E0565	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0565.html
+E0566	clinic	clinic/E0566	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0566.html
+E0567	clinic	clinic/E0567	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0567.html
+E0568	clinic	clinic/E0568	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0568.html
+E0569	clinic	clinic/E0569	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0569.html
+E0570	shared-cause	task-2503	-1	-	Both exercises concern calling conventions. E0570 requires an ABI unsupported by the selected target. The course task exercises the related ABI mismatch on the host.	https://doc.rust-lang.org/error_codes/E0570.html
+E0571	direct	task-218	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0571.html
+E0572	clinic	clinic/E0572	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0572.html
+E0573	clinic	clinic/E0573	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0573.html
+E0574	clinic	clinic/E0574	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0574.html
+E0575	clinic	clinic/E0575	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0575.html
+E0576	clinic	clinic/E0576	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0576.html
+E0577	clinic	clinic/E0577	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0577.html
+E0578	clinic	clinic/E0578	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0578.html
+E0579	clinic	clinic/E0579	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0579.html
+E0580	clinic	clinic/E0580	0	binary	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0580.html
+E0581	clinic	clinic/E0581	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0581.html
+E0582	clinic	clinic/E0582	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0582.html
+E0583	direct	task-036	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0583.html
+E0584	clinic	clinic/E0584	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0584.html
+E0585	clinic	clinic/E0585	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0585.html
+E0586	clinic	clinic/E0586	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0586.html
+E0587	clinic	clinic/E0587	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0587.html
+E0588	clinic	clinic/E0588	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0588.html
+E0589	clinic	clinic/E0589	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0589.html
+E0590	clinic	clinic/E0590	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0590.html
+E0591	shared-cause	task-2503	-1	-	Practice the type of a callback value and a coercion to an explicit function pointer. The reference illustrates item-versus-pointer representations across separate snippets.	https://doc.rust-lang.org/error_codes/E0591.html
+E0592	clinic	clinic/E0592	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0592.html
+E0593	clinic	clinic/E0593	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0593.html
+E0594	direct	task-1203	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0594.html
+E0595	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0595.html
+E0596	direct	task-416	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0596.html
+E0597	clinic	clinic/E0597	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0597.html
+E0599	direct	task-955	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0599.html
+E0600	clinic	clinic/E0600	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0600.html
+E0601	direct	task-026	-1	-	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0601.html
+E0602	toolchain		-1	-	The trigger is a lint name passed as a compiler command-line option. It cannot be expressed in a Rust source snippet alone.	https://doc.rust-lang.org/error_codes/E0602.html
+E0603	direct	task-855	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0603.html
+E0604	clinic	clinic/E0604	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0604.html
+E0605	clinic	clinic/E0605	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0605.html
+E0606	clinic	clinic/E0606	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0606.html
+E0607	clinic	clinic/E0607	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0607.html
+E0608	direct	task-460	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0608.html
+E0609	direct	task-614	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0609.html
+E0610	clinic	clinic/E0610	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0610.html
+E0614	direct	task-366	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0614.html
+E0615	clinic	clinic/E0615	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0615.html
+E0616	clinic	clinic/E0616	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0616.html
+E0617	clinic	clinic/E0617	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0617.html
+E0618	clinic	clinic/E0618	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0618.html
+E0619	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0619.html
+E0620	clinic	clinic/E0620	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0620.html
+E0621	direct	task-1177	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0621.html
+E0622	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0622.html
+E0623	clinic	clinic/E0623	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0623.html
+E0624	clinic	clinic/E0624	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0624.html
+E0625	clinic	clinic/E0625	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0625.html
+E0626	toolchain		-1	-	The reference requires coroutine features. The stable course toolchain rejects those feature gates.	https://doc.rust-lang.org/error_codes/E0626.html
+E0627	clinic	clinic/E0627	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0627.html
+E0628	clinic	clinic/E0628	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0628.html
+E0631	direct	task-1303	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0631.html
+E0632	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0632.html
+E0633	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0633.html
+E0634	clinic	clinic/E0634	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0634.html
+E0635	clinic	clinic/E0635	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0635.html
+E0636	clinic	clinic/E0636	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0636.html
+E0637	clinic	clinic/E0637	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0637.html
+E0638	toolchain		-1	-	The non-exhaustive matching restriction applies to downstream crates. The single library being type-checked has no external public enum dependency.	https://doc.rust-lang.org/error_codes/E0638.html
+E0639	toolchain		-1	-	Constructing the non-exhaustive struct must happen from outside the crate that defines it.	https://doc.rust-lang.org/error_codes/E0639.html
+E0640	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0640.html
+E0641	clinic	clinic/E0641	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0641.html
+E0642	clinic	clinic/E0642	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0642.html
+E0643	clinic	clinic/E0643	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0643.html
+E0644	clinic	clinic/E0644	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0644.html
+E0646	clinic	clinic/E0646	0	binary	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0646.html
+E0647	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0647.html
+E0648	clinic	clinic/E0648	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0648.html
+E0657	clinic	clinic/E0657	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0657.html
+E0658	clinic	clinic/E0658	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0658.html
+E0659	clinic	clinic/E0659	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0659.html
+E0660	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0660.html
+E0661	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0661.html
+E0662	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0662.html
+E0663	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0663.html
+E0664	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0664.html
+E0665	clinic	clinic/E0665	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0665.html
+E0666	clinic	clinic/E0666	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0666.html
+E0667	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0667.html
+E0668	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0668.html
+E0669	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0669.html
+E0670	toolchain		-1	-	The diagnostic requires the Rust 2015 edition. Async functions are allowed in the course's 2024 edition.	https://doc.rust-lang.org/error_codes/E0670.html
+E0671	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0671.html
+E0687	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0687.html
+E0688	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0688.html
+E0689	direct	task-119	0	body	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0689.html
+E0690	clinic	clinic/E0690	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0690.html
+E0691	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0691.html
+E0692	clinic	clinic/E0692	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0692.html
+E0693	clinic	clinic/E0693	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0693.html
+E0695	clinic	clinic/E0695	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0695.html
+E0696	clinic	clinic/E0696	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0696.html
+E0697	clinic	clinic/E0697	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0697.html
+E0698	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0698.html
+E0699	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0699.html
+E0700	toolchain		-1	-	Edition 2024 captures in-scope lifetimes in return-position impl Trait by default, so the historical implicit-capture example compiles.	https://doc.rust-lang.org/error_codes/E0700.html
+E0701	clinic	clinic/E0701	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0701.html
+E0703	clinic	clinic/E0703	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0703.html
+E0704	clinic	clinic/E0704	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0704.html
+E0705	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0705.html
+E0706	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0706.html
+E0708	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0708.html
+E0710	clinic	clinic/E0710	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0710.html
+E0711	internal		-1	-	The pinned explanation identifies an internal diagnostic.	https://doc.rust-lang.org/error_codes/E0711.html
+E0712	clinic	clinic/E0712	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0712.html
+E0713	clinic	clinic/E0713	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0713.html
+E0714	clinic	clinic/E0714	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0714.html
+E0715	clinic	clinic/E0715	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0715.html
+E0716	clinic	clinic/E0716	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0716.html
+E0717	internal		-1	-	The pinned explanation identifies an internal diagnostic.	https://doc.rust-lang.org/error_codes/E0717.html
+E0718	clinic	clinic/E0718	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0718.html
+E0719	clinic	clinic/E0719	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0719.html
+E0720	clinic	clinic/E0720	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0720.html
+E0722	clinic	clinic/E0722	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0722.html
+E0724	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0724.html
+E0725	toolchain		-1	-	Requires a nightly compiler plus a restricted feature allowlist on the compiler command line.	https://doc.rust-lang.org/error_codes/E0725.html
+E0726	clinic	clinic/E0726	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0726.html
+E0727	clinic	clinic/E0727	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0727.html
+E0728	direct	task-2003	-1	-	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0728.html
+E0729	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0729.html
+E0730	clinic	clinic/E0730	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0730.html
+E0731	clinic	clinic/E0731	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0731.html
+E0732	clinic	clinic/E0732	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0732.html
+E0733	clinic	clinic/E0733	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0733.html
+E0734	clinic	clinic/E0734	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0734.html
+E0735	clinic	clinic/E0735	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0735.html
+E0736	clinic	clinic/E0736	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0736.html
+E0737	clinic	clinic/E0737	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0737.html
+E0739	clinic	clinic/E0739	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0739.html
+E0740	clinic	clinic/E0740	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0740.html
+E0741	clinic	clinic/E0741	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0741.html
+E0742	clinic	clinic/E0742	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0742.html
+E0743	clinic	clinic/E0743	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0743.html
+E0744	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0744.html
+E0745	clinic	clinic/E0745	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0745.html
+E0746	clinic	clinic/E0746	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0746.html
+E0747	clinic	clinic/E0747	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0747.html
+E0748	clinic	clinic/E0748	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0748.html
+E0749	clinic	clinic/E0749	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0749.html
+E0750	clinic	clinic/E0750	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0750.html
+E0751	clinic	clinic/E0751	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0751.html
+E0752	clinic	clinic/E0752	0	binary	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0752.html
+E0753	clinic	clinic/E0753	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0753.html
+E0754	clinic	clinic/E0754	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0754.html
+E0755	clinic	clinic/E0755	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0755.html
+E0756	clinic	clinic/E0756	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0756.html
+E0757	clinic	clinic/E0757	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0757.html
+E0758	clinic	clinic/E0758	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0758.html
+E0759	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0759.html
+E0760	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0760.html
+E0761	toolchain		-1	-	Requires a conflicting pair of module files on disk. The compiler clinic checks an isolated, single source file.	https://doc.rust-lang.org/error_codes/E0761.html
+E0762	direct	task-510	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0762.html
+E0763	clinic	clinic/E0763	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0763.html
+E0764	clinic	clinic/E0764	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0764.html
+E0765	direct	task-028	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0765.html
+E0766	clinic	clinic/E0766	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0766.html
+E0767	clinic	clinic/E0767	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0767.html
+E0768	clinic	clinic/E0768	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0768.html
+E0769	clinic	clinic/E0769	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0769.html
+E0770	clinic	clinic/E0770	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0770.html
+E0771	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0771.html
+E0772	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0772.html
+E0773	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0773.html
+E0774	clinic	clinic/E0774	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0774.html
+E0775	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0775.html
+E0776	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0776.html
+E0777	clinic	clinic/E0777	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0777.html
+E0778	clinic	clinic/E0778	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0778.html
+E0779	clinic	clinic/E0779	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0779.html
+E0780	toolchain		-1	-	The example needs rustdoc attribute validation and an external import named foo. Its stand-alone rustc run stops at name resolution.	https://doc.rust-lang.org/error_codes/E0780.html
+E0781	clinic	clinic/E0781	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0781.html
+E0782	direct	task-1103	0	item	The starter's compiler output contains this diagnostic.	https://doc.rust-lang.org/error_codes/E0782.html
+E0783	clinic	clinic/E0783	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0783.html
+E0784	clinic	clinic/E0784	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0784.html
+E0785	clinic	clinic/E0785	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0785.html
+E0786	toolchain		-1	-	Requires the compiler's dependency search path to contain a damaged metadata artifact.	https://doc.rust-lang.org/error_codes/E0786.html
+E0787	clinic	clinic/E0787	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0787.html
+E0788	clinic	clinic/E0788	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0788.html
+E0789	internal		-1	-	The pinned explanation identifies an internal diagnostic.	https://doc.rust-lang.org/error_codes/E0789.html
+E0790	clinic	clinic/E0790	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0790.html
+E0791	clinic	clinic/E0791	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0791.html
+E0792	clinic	clinic/E0792	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0792.html
+E0793	clinic	clinic/E0793	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0793.html
+E0794	clinic	clinic/E0794	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0794.html
+E0795	clinic	clinic/E0795	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0795.html
+E0796	retired		-1	-	The pinned compiler explanation marks this diagnostic as retired.	https://doc.rust-lang.org/error_codes/E0796.html
+E0797	clinic	clinic/E0797	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0797.html
+E0798	clinic	clinic/E0798	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0798.html
+E0799	clinic	clinic/E0799	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0799.html
+E0800	clinic	clinic/E0800	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0800.html
+E0801	clinic	clinic/E0801	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0801.html
+E0802	clinic	clinic/E0802	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0802.html
+E0803	clinic	clinic/E0803	0	item	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0803.html
+E0804	clinic	clinic/E0804	0	body	The pinned compiler emits this code on the indexed example.	https://doc.rust-lang.org/error_codes/E0804.html
+E0805	missing		-1	-	This published code is absent from rustc 1.88.0 --explain.	https://doc.rust-lang.org/error_codes/E0805.html
+E0806	missing		-1	-	This published code is absent from rustc 1.88.0 --explain.	https://doc.rust-lang.org/error_codes/E0806.html

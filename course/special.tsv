@@ -1,0 +1,4 @@
+id	title	kind	tags	diagnostics	outcome
+1509	Find the missing workspace dependency	debugging	cargo,workspace,path-dependency,metadata		Cargo fails to read unit/Cargo.toml
+2090	Drain a bounded inbox on shutdown	debugging	tokio,async,shutdown,cancellation,backpressure		shutdown_drains_the_whole_queue fails with only the first record
+2560	Find an allocation that outlives the batch	debugging	miri,leak,drop,linux		Native tests pass; Miri reports a leaked allocation

@@ -1,0 +1,10 @@
+use task_920::*;
+
+#[test]
+fn public_examples() {
+    assert_eq!(
+        first_nonempty_field_slash("path/1/12", |s| s.chars().count() + 1),
+        2
+    );
+    assert_eq!(first_nonempty_field_slash("path/123", |s| s.len() * 2), 6);
+}

@@ -1,0 +1,13 @@
+#![forbid(unsafe_code)]
+
+pub const TRACK_PROOF: u32 = 0;
+
+pub enum Event<'a> {
+    Data(&'a str),
+    Heartbeat,
+    End,
+}
+
+pub fn first_nonempty_field_equals(event: Event<'_>) -> Option<usize> {
+    None
+}

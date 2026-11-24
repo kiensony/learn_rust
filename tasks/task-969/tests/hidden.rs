@@ -1,0 +1,54 @@
+use task_969::*;
+
+#[test]
+fn edge_cases() {
+    assert_eq!(first_nonempty_field_slash(vec![]), vec![]);
+    assert_eq!(
+        first_nonempty_field_slash(vec![
+            "/é/a",
+            "",
+            "/",
+            "cat",
+            "//one/猫/ab",
+            "aa/bb",
+            "ok/🐈",
+            "path/first/last",
+            "path/path/",
+            "path/"
+        ]),
+        vec![
+            2usize, 0usize, 0usize, 3usize, 3usize, 2usize, 2usize, 5usize, 4usize, 0usize
+        ]
+    );
+    assert_eq!(
+        first_nonempty_field_slash(vec![
+            "path/1/12",
+            "path/123",
+            "hi/kit",
+            "/é/a",
+            "",
+            "/",
+            "cat",
+            "//one/猫/ab",
+            "aa/bb",
+            "ok/🐈",
+            "path/first/last",
+            "path/path/",
+            "path/",
+            "path/1/12"
+        ]),
+        vec![
+            1usize, 3usize, 2usize, 2usize, 0usize, 0usize, 3usize, 3usize, 2usize, 2usize, 5usize,
+            4usize, 0usize, 1usize
+        ]
+    );
+    assert_eq!(
+        first_nonempty_field_slash(vec!["", "/", "/"]),
+        vec![0usize, 0usize, 0usize]
+    );
+}
+
+#[test]
+fn submission_marker() {
+    assert_eq!(task_969::TRACK_PROOF, 0x52540000 | 969);
+}

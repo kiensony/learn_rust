@@ -1,0 +1,24 @@
+use task_1146::*;
+
+#[test]
+fn edge_cases() {
+    assert_eq!(remainder_after_first_mark_hash(&"unclosed[cat"), 0);
+    assert_eq!(remainder_after_first_mark_hash(&String::from("[]")), 0);
+    assert_eq!(remainder_after_first_mark_hash(&"[42]"), 0);
+    assert_eq!(remainder_after_first_mark_hash(&String::from("[321]")), 0);
+    assert_eq!(remainder_after_first_mark_hash(&"hi#kit"), 0);
+    assert_eq!(remainder_after_first_mark_hash(&String::from("#é#a")), 0);
+    assert_eq!(remainder_after_first_mark_hash(&""), 0);
+    assert_eq!(remainder_after_first_mark_hash(&String::from("#")), 0);
+    assert_eq!(remainder_after_first_mark_hash(&"cat"), 0);
+    assert_eq!(
+        remainder_after_first_mark_hash(&String::from("##one#猫#ab")),
+        0
+    );
+    assert_eq!(remainder_after_first_mark_hash(&"aa#bb"), 0);
+}
+
+#[test]
+fn submission_marker() {
+    assert_eq!(task_1146::TRACK_PROOF, 0x52540000 | 1146);
+}

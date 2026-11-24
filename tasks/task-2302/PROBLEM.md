@@ -1,0 +1,24 @@
+# task-2302 — Warmup discard · total
+
+Complete the missing part of the supplied function. Trace one input through the observation and reporting steps.
+
+The input is a fixed sequence of benchmark durations in microseconds. Observe the measured durations after discarding the first two warmup iterations. Run the acceptance suite with both cargo test and cargo test --release, and explain how compiler optimization could affect a timing-based assertion.
+
+Return the sum of all observations, widening each one before adding. Use deterministic measurement fixtures and a release build. During review, point to the operation that enforces its contract.
+
+```rust
+pub fn warmup_discard_total(input: &[u8]) -> u64
+```
+
+Implement the public function in `src/lib.rs`.
+
+## Public examples
+
+- `warmup_discard_total(&[])` gives `0`.
+- `warmup_discard_total(&[4])` gives `0`.
+
+## Run this exercise
+
+From the course root, run `cargo test --manifest-path tasks/task-2302/Cargo.toml --test public`. After the examples pass, complete the submission step in REVIEW.md and run `cargo track test task-2302`.
+
+[Module reading](https://doc.rust-lang.org/cargo/reference/profiles.html)

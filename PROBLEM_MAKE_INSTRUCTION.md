@@ -1,107 +1,19 @@
-# PROBLEM_MAKE_INSTRUCTION.md
+# Authoring an exercise
 
-For agents (and humans using an AI) that **author** a new `task-NNN`.
-Do not solve the task. Do not put a working answer in `src/lib.rs`.
+Look up the learning position, module, phase, kind, and prerequisites in `course/catalog.tsv`. The original ten IDs have fixed placement at slot six of their respective modules. The stage plan and its official readings are in [course/PLAN.md](course/PLAN.md) and [course/modules.tsv](course/modules.tsv).
 
-## When this mode applies
+Read neighboring PROBLEM.md files and the existing APIs before editing. Give each exercise one teachable objective and a concrete observable result. Keep the ten legacy crates and their original student files in the root workspace. Each new exercise has its own Cargo.toml with an explicit workspace, a Rust 2024 package, and the task ID as a crate name with underscores.
 
-User asks to create / extend / generate `task-xxx` (or the next number).
-Read this file + existing `tasks/task-*/PROBLEM.md` so the new task does not repeat an old API.
+## Required materials
 
-## Pick the issue from N
+- Write PROBLEM.md with the public contract, editable file names, examples, edge behavior, and direct Cargo commands. Give first-time programmers the vocabulary to understand the first command. Keep submission markers in the review materials.
+- Supply a small editable starter. For debugging labs, reproduce one specific defect. In an explanation or refactoring task, identify the deliverable that the reviewer will inspect.
+- Provide public examples and edge-case integration tests. Marked Rust submissions use a hidden equality check on `0x52540000 | N`. The legacy prefix remains `0x52535400`. A starter placeholder can be zero so the learner can run behavioral tests before adding the marker.
+- Write three increasingly specific hints, one per line, in HINTS.md. For legacy tasks place the three hints in `course/legacy/task-NNN.md`. Add a concise REVIEW.md with behavior, idiom, submission, and any safety requirements.
+- Use safe, dependency-free Rust through stage 5. Give later dependencies explicit versions. Label any lab requiring learner-written unsafe code or FFI and specify its toolchain, target, and safety contract.
 
-`N` = decimal task number. `NNN` = 3-digit folder (`7` → `task-007`, crate `task_007`).
-Higher N = harder, new concept, not a reskin of an earlier task.
+## Verification
 
-| Band | N | Concept to force | Allowed surface | Ban |
-|------|---|------------------|-----------------|-----|
-| A | 1–3 | strings, `if`/`match`, `Result`/`Option` with exact error text | free fns | ownership puzzles, traits |
-| B | 4–6 | move, `&`/`&mut`, structs + `impl` | owned vs borrowed args | `Rc`, threads, generics-heavy |
-| C | 7–9 | enums, `BTreeMap`/`Vec`, traits + simple generics | exhaustive match | `unsafe`, lifetimes beyond `'a` on two refs |
-| D | 10–12 | iterators, explicit lifetimes, modules (`mod` + `pub use`) | adapters, `split_once` | extra crates |
-| E | 13–15 | `Box`, `Rc`, `RefCell`/`Cell` (safe interior mut) | std smart pointers | raw pointers, `unsafe` |
-| F | 16–18 | threads, `mpsc`, `Mutex`/`RwLock` | join, send values | `unsafe`, FFI, rolling your own sync |
-| G | 19+ | multi-type design: custom error enum + iterator + collection | compose prior bands | new crates, `unsafe`, macros beyond `derive` |
+Work on 50 learning positions at a time. Confirm the catalog mix and prerequisites with `python3 tools/audit_course.py`. Reproduce the intended starter result, then overlay a reference in a fresh copy and run the same tests. Use structured compiler codes for diagnostic labs. Profile or test concurrency under a bounded, reproducible workload. Keep all examples local and isolate Cargo metadata and build scripts by exercise.
 
-If N falls in a band that already has a task with the same verb (parse, count, stack, greet): pick a **different domain** (dates, logs, spans, queues, votes, paths).
-
-One primary concept per task. A hard test may mix one earlier concept.
-
-## Files you must write
-
-```
-tasks/task-NNN/
-  Cargo.toml          # package name task_NNN, edition 2021, no deps
-  PROBLEM.md          # spec only
-  REVIEW.md           # rubric
-  src/lib.rs          # signatures + stubs, not a solution
-  tests/public.rs     # 2–4 obvious cases
-  tests/hidden.rs     # proof + edge/hard cases
-```
-
-Add `"tasks/task-NNN"` to the workspace `Cargo.toml` `members` list.
-
-## PROBLEM.md shape
-
-```
-# task-NNN — <short name>
-
-<one paragraph: what to build>
-
-```rust
-<exact public signatures>
-```
-
-- bullets: behavior, exact error strings, tie-breaks
-- "No unsafe. Std only."
-```
-
-No hints that are the algorithm. No sample full implementation.
-
-## src/lib.rs stub rules
-
-- Public types/fns named as in PROBLEM.md.
-- Bodies compile and are wrong or empty (`None`, `Vec::new()`, `Err(...)`, `0`).
-- Do **not** include `TRACK_PROOF` or the handwritten comment. The student copies those from `INSTRUCTION.md`.
-- No `todo!()` if it makes `cargo test` skip compile — compile the crate; tests may fail to compile until proof exists (that is intended).
-- No `unsafe`. No extra modules unless the problem is about modules.
-
-## tests
-
-`tests/hidden.rs` must:
-
-```rust
-use task_NNN::TRACK_PROOF;
-
-#[test]
-fn proof() {
-    assert_eq!(TRACK_PROOF, 0x52535400 | N);
-}
-```
-
-Plus hard cases: empty, max/min ints, ties, extra separators, overflow, unsorted input, unicode if the spec mentions bytes vs chars.
-
-`tests/public.rs` only easy cases from PROBLEM.md. Do not import `TRACK_PROOF` in public tests.
-
-Do not write the student's solution in tests (no copy-paste of the algorithm as comments).
-
-## REVIEW.md shape
-
-Must-pass: proof comment + `TRACK_PROOF == 0x52535400 | N`, exact signatures, no `unsafe`, tests green.
-
-Quality: the band's idiomatic tool (`checked_*`, `entry`, iterator adapters, no needless clone).
-
-Reject: missing proof, LLM comment dump, extra public API, `unwrap` on specified `Result` paths.
-
-## Agent checklist before finishing
-
-1. N and crate name match folder.
-2. Workspace member added.
-3. Concept matches the band table.
-4. Hidden tests include proof + at least 3 edge cases.
-5. Stub is not a correct solution.
-6. PROBLEM.md does **not** mention `TRACK_PROOF` or the handwritten comment.
-
-## Prompt contract (what the user should paste)
-
-See `INSTRUCTION.md` § Create a problem with AI. Follow that prompt; do not also emit a solved `lib.rs`.
+Use `tools/verify_pilot.py` for the first module, `tools/verify_special.py` for the Cargo, Tokio, and Miri pilots, and `tools/verify_batch.py --from-position A --through-position B` for ordinary suites. Each verifier accepts `--repairs DIR`. References live in the separate `solution` branch under `solutions/task-NNN/`.

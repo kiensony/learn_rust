@@ -1,0 +1,10 @@
+use task_1549::*;
+
+#[test]
+fn public_examples() {
+    assert_eq!(
+        packet_gray_code_frequent_readings(&[3, 6, 9, 12, 21, 15, 0, 26, 8, 31], 3),
+        vec![2u32, 5u32, 13u32]
+    );
+    assert_eq!(packet_gray_code_frequent_readings(&[], 0), vec![]);
+}

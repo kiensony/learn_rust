@@ -1,0 +1,11 @@
+# Review — Shard occupancy · changes
+
+- Demonstrate the two public examples and the edge cases for `shard_occupancy_changes`.
+- Identify the first incorrect step and show a regression that would have caught it.
+- Apply the module constraints in PROBLEM.md. Preserve the supplied tests and API.
+
+## Submission
+
+Make `// rust-track: handwritten task-1835` the first line of `src/lib.rs` and replace the starter’s zero marker with `pub const TRACK_PROOF: u32 = 0x52540000 | 1835;`.
+
+Run `cargo track test task-1835` for the full suite.

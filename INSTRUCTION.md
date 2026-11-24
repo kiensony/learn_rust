@@ -1,104 +1,36 @@
-# INSTRUCTION.md — Rust Track
+# Learning with Rust Track
 
-Read this before any task. Review agents assume you did.
+Begin at task-011. Run the example first. Write down what you think one small edit will change, save the edit, and run it again. A compiler error is feedback about a rule Rust checked. A failing assertion compares what your program returned with what the exercise asked for.
 
-## Setup
+## A practice session
 
-Need: Rust stable (`rustc`, `cargo`).
+1. Read `cargo track show <id>`. Each new task has its own small Cargo project. The task tells you which source or manifest to edit.
+2. Try one public example on paper. Run the example or the public test. The first tasks take about 5–15 minutes. Allow 15–30 minutes for an advanced task, plus time for any initial tool installation.
+3. Use `cargo track check <id>` after an edit. Test behavior with the task’s public suite. Start with hint 1 when you get stuck, then try your own idea before opening another hint.
+4. Finish the submission step below, run `cargo track test <id>`, and use REVIEW.md for a short review. Keep the provided acceptance tests intact. Put your own regression in a new test file when the exercise asks for one.
+5. Use `cargo track next <id>` to continue in learning order. You can search for any topic and join a later module at its first guided task.
 
-```bash
-cd rust-track
-cargo test -p task_001   # run one task
-cargo test               # run all
-```
+## Debugging diary
 
-Work only in that task's `src/lib.rs`. Do not edit `tests/`.
+Reproduce the symptom using the command in PROBLEM.md. Record the first failing test or compiler code. Reduce the example until one input, type, configuration value, or scheduling event explains the failure. Predict the result of a targeted edit. Run the original reproduction again, then the complete suite. Record one input that would catch the bug if it returned.
 
-## Flow
+For a numbered error, try `rustc --explain E0502` and `cargo track list E0502`. The compiler clinic can also prepare a small example for many errors. Use `python3 tools/error_clinic.py E0015 --prepare example.rs` from the repository root.
 
-1. Open `tasks/task-NNN/PROBLEM.md`.
-2. Implement in `tasks/task-NNN/src/lib.rs`.
-3. `cargo test -p task_NNN`.
-4. Ask a review agent to grade using `REVIEW.md` + root `AGENTS.md`.
-5. Pass review before `task-NNN+1`. Higher N = harder.
+## Submission marker
 
-Crate names use underscores: `task-001` → `-p task_001`.
+For a Rust task with a marker test, make the first line of the learner’s library `// rust-track: handwritten task-NNN` using the actual folder name. Add or update the public constant in that library. The prefix depends on the stable task ID.
 
-## Rules
+| Task | Constant example |
+|---|---|
+| Original tasks 001–010 | `pub const TRACK_PROOF: u32 = 0x52535400 \| 1;` for task-001 |
+| New marked tasks 011–3000 | `pub const TRACK_PROOF: u32 = 0x52540000 \| 11;` for task-011 |
 
-- Safe Rust only. `unsafe` is an automatic fail.
-- Std only. No extra crates.
-- No `todo!`, `unimplemented!`, or leftover `panic!("not implemented")`.
-- Match names, signatures, and error strings in PROBLEM.md exactly.
-- Do not weaken tests.
+Use the decimal task number on the right. In a binary exercise, REVIEW.md points to the library where the marker belongs. Manifest-only labs can be submitted using the files named in their rubric.
 
-## Handwritten proof (required)
+## Reviewing work
 
-Every `src/lib.rs` must contain both:
+Use safe Rust and the supplied standard library through stage 5. Later stages name any provided dependency in the exercise manifest. Learner-written unsafe operations and foreign interfaces belong only in explicitly labeled advanced labs. Review their safety argument alongside the tests.
 
-1. First line exactly (NNN = folder number, zero-padded):
+Ask a coach for a hint by giving the task ID, the command you ran, one input, the symptom, and what you tried. At a checkpoint, use documentation freely, write your own regression, and explain a design tradeoff. Aim to pass four of five independent checkpoints in each module and every safety-critical checkpoint. See the [mastery guide](course/mastery.md).
 
-```rust
-// rust-track: handwritten task-NNN
-```
-
-2. This constant, where `N` is the decimal task number (`task-001` → `1`):
-
-```rust
-pub const TRACK_PROOF: u32 = 0x52535400 | N;
-```
-
-Examples: task-001 → `0x52535400 | 1`, task-010 → `0x52535400 | 10`.
-
-Hidden tests check the constant. Review agents check the comment. Missing either = reject.
-
-## Anti-AI review
-
-If you paste PROBLEM.md into an AI and paste the output back, review will usually fail. Agents reject:
-
-- Missing proof comment or `TRACK_PROOF`
-- `unsafe`, extra crates, `#[allow(...)]` to hide warnings
-- Comments that restate each line
-- Stock rustdoc on every item when the problem did not ask
-- `clone()` / `.to_string()` to dodge borrowing
-- `unwrap()` / `expect()` on library paths the problem wants `Option`/`Result`
-- Helpers or APIs the problem did not specify
-- Emoji in code or comments
-- Identical phrasing to common LLM boilerplate (`// Function to ...`, `// Let's implement`)
-
-Write the **solution** yourself. Use docs and the compiler, not generated dumps.
-
-## Create a problem with AI
-
-Allowed: use AI to **author** the next exercise (spec + stubs + tests).
-Not allowed: use AI to fill `src/lib.rs` for a task you are solving.
-
-### Steps
-
-1. See the last folder in `tasks/` (e.g. `task-010`). Next is `task-011`.
-2. Open `PROBLEM_MAKE_INSTRUCTION.md`. Note the **band** for that N (what concept the task must teach).
-3. Paste the prompt below into an agent that can write files. Do not add "also give me the solution".
-4. Check the new folder: `PROBLEM.md`, `REVIEW.md`, stub `src/lib.rs`, `tests/public.rs`, `tests/hidden.rs`, workspace member.
-5. Confirm `PROBLEM.md` does not mention `TRACK_PROOF`. Confirm hidden tests do.
-6. Solve it by hand. Then review with `AGENTS.md`.
-
-### Prompt to paste
-
-```
-You are in problem-author mode for this Rust track.
-
-Read AGENTS.md and PROBLEM_MAKE_INSTRUCTION.md.
-Create task-NNN (use the next unused number).
-
-Rules:
-- Choose the issue from the band table for N. Do not copy an existing task's API.
-- Write PROBLEM.md, REVIEW.md, stub src/lib.rs, tests/public.rs, tests/hidden.rs, Cargo.toml.
-- Add the crate to the workspace members.
-- Stub must compile as a lib but must not be a correct solution.
-- Hidden tests must check TRACK_PROOF == 0x52535400 | N and include hard cases.
-- Do not put TRACK_PROOF or the handwritten comment in PROBLEM.md.
-- Do not write a working solution in src/lib.rs.
-- No unsafe. Std only.
-```
-
-Replace `NNN` with the next number. If you want a theme (logs, votes, paths), add one line: `Domain: …`. Do not ask the AI for the answer key.
+Authors use [the problem authoring guide](PROBLEM_MAKE_INSTRUCTION.md).

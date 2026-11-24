@@ -1,0 +1,29 @@
+code	exercise	reason
+E0033	task-1103	A trait object's concrete size is erased. Practice retaining a pointer to a dyn object. The reference snippet uses a trait name supplied by its surrounding example.
+E0210		This orphan-rule example uses a trait from a second crate and type parameters whose coverage depends on the local type's position.
+E0371		The reference uses pre-2021 bare trait object syntax. The 2024 edition diagnoses the missing dyn keyword before checking the redundant implementation.
+E0454		The reference's external block uses pre-2024 syntax. The 2024 edition requires unsafe extern blocks before it can validate an empty link name.
+E0455		Link kinds depend on the target. The reference names Apple frameworks, which use an Apple target's linker and conventions.
+E0458		The 2024 parser rejects the published extern block before validating the native library link kind.
+E0459		The published native-link example needs an unsafe extern block in edition 2024 before the missing library name can be diagnosed.
+E0460		Requires separately compiled versions of a dependency and a downstream crate retaining the earlier metadata.
+E0461		Requires a dependency built for a second installed target and a downstream compile targeting the host.
+E0462		Requires a native static library on the dependency search path where rustc expects a Rust library artifact.
+E0464		Requires two compiled artifacts with the same crate name on the dependency search path.
+E0472		The x86-64 Linux host supports inline assembly. This diagnostic requires a target without that assembly support.
+E0478		The reference uses a pre-2021 bare trait object inside Box. Edition 2024 rejects that form before checking the outlives bound.
+E0511		The platform intrinsic and SIMD types used in the reference are feature-gated on stable 1.88.0.
+E0514		Requires metadata produced by one rustc version to be read by a different version.
+E0519		Requires an independently built dependency with crate metadata identical to that of the invoking crate.
+E0570	task-2503	Both exercises concern calling conventions. E0570 requires an ABI unsupported by the selected target. The course task exercises the related ABI mismatch on the host.
+E0591	task-2503	Practice the type of a callback value and a coercion to an explicit function pointer. The reference illustrates item-versus-pointer representations across separate snippets.
+E0602		The trigger is a lint name passed as a compiler command-line option. It cannot be expressed in a Rust source snippet alone.
+E0626		The reference requires coroutine features. The stable course toolchain rejects those feature gates.
+E0638		The non-exhaustive matching restriction applies to downstream crates. The single library being type-checked has no external public enum dependency.
+E0639		Constructing the non-exhaustive struct must happen from outside the crate that defines it.
+E0670		The diagnostic requires the Rust 2015 edition. Async functions are allowed in the course's 2024 edition.
+E0700		Edition 2024 captures in-scope lifetimes in return-position impl Trait by default, so the historical implicit-capture example compiles.
+E0725		Requires a nightly compiler plus a restricted feature allowlist on the compiler command line.
+E0761		Requires a conflicting pair of module files on disk. The compiler clinic checks an isolated, single source file.
+E0780		The example needs rustdoc attribute validation and an external import named foo. Its stand-alone rustc run stops at name resolution.
+E0786		Requires the compiler's dependency search path to contain a damaged metadata artifact.

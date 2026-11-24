@@ -1,0 +1,117 @@
+name: Course verification
+
+on:
+  pull_request:
+  push:
+    branches: [main, solution]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: course-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PYTHONUTF8: "1"
+  CARGO_TERM_COLOR: never
+  CARGO_INCREMENTAL: "0"
+  CARGO_PROFILE_TEST_DEBUG: "0"
+
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python tools/audit_course.py
+
+  exercises:
+    needs: catalog
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        # Each job checks a contiguous stage in six 50-exercise batches.
+        # The portable core spans stages 1–5. Specialized stages run on Linux.
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        stage: [1, 2, 3, 4, 5]
+        include:
+          - {os: ubuntu-latest, stage: 6}
+          - {os: ubuntu-latest, stage: 7}
+          - {os: ubuntu-latest, stage: 8}
+          - {os: ubuntu-latest, stage: 9}
+          - {os: ubuntu-latest, stage: 10}
+    runs-on: ${{ matrix.os }}
+    name: Stage ${{ matrix.stage }} on ${{ matrix.os }}
+    env:
+      COURSE_STAGE: ${{ matrix.stage }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: rustup toolchain install 1.88.0 --profile minimal
+      - name: Test learner commands
+        if: matrix.stage == 1
+        run: cargo +1.88.0 test --locked -p track
+      - name: Check setup and Cargo pilot
+        if: matrix.stage == 1
+        run: |
+          repair=()
+          if [[ -d solutions ]]; then repair=(--repairs solutions); fi
+          python tools/verify_pilot.py --jobs 3 "${repair[@]}"
+      - name: Check each module
+        run: |
+          repair=()
+          if [[ -d solutions ]]; then repair=(--repairs solutions); fi
+          first=$(( (COURSE_STAGE - 1) * 300 + 1 ))
+          for (( offset=0; offset<300; offset+=50 )); do
+            python tools/verify_batch.py --jobs 3 \
+              --from-position "$(( first + offset ))" \
+              --through-position "$(( first + offset + 49 ))" "${repair[@]}"
+          done
+
+  specialized-pilots:
+    needs: catalog
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: rustup toolchain install 1.88.0 --profile minimal
+      - run: rustup toolchain install nightly-2025-06-26 --profile minimal --component miri,rust-src
+      - run: cargo +nightly-2025-06-26 miri setup
+      - name: Check Cargo resolution, Tokio shutdown and Miri leak detection
+        shell: bash
+        run: |
+          repair=()
+          if [[ -d solutions ]]; then repair=(--repairs solutions); fi
+          python tools/verify_special.py "${repair[@]}"
+      - name: Check the repaired unsafe adapter and cross-target decoder
+        if: ${{ hashFiles('solutions/check.py') != '' }}
+        shell: bash
+        run: |
+          rustup target add --toolchain 1.88.0 thumbv7em-none-eabi wasm32-unknown-unknown
+          for task in task-2457 task-2877; do
+            cp -R "tasks/$task" "$RUNNER_TEMP/$task"
+            cp -R "solutions/$task/." "$RUNNER_TEMP/$task/"
+          done
+          cargo +nightly-2025-06-26 miri test --manifest-path "$RUNNER_TEMP/task-2457/Cargo.toml"
+          cargo +1.88.0 check --manifest-path "$RUNNER_TEMP/task-2877/device/Cargo.toml" --target thumbv7em-none-eabi
+          cargo +1.88.0 build --release --manifest-path "$RUNNER_TEMP/task-2877/web/Cargo.toml" --target wasm32-unknown-unknown

@@ -1,0 +1,72 @@
+# Checkpoints and second attempts
+
+The last five positions of each module are independent checkpoints. Use the problem statement, compiler and official documentation. Before running the tests, predict an edge case and write down what the program should do. Bring the passing test, your prediction and a brief explanation of the change to review.
+
+Record one row per attempt in your own notes. Include the task ID, date, result, missed concept and evidence from the rerun. Four distinct passing checkpoints out of five meet the recommended threshold. Every safety-critical checkpoint must also pass. Treat all five checkpoints in each of **Unsafe contracts and raw pointers**, **FFI and ABI**, and **Miri and soundness** as safety-critical. Record the invariant, who upholds it, and the result of the applicable platform test or Miri run.
+
+After a missed checkpoint, return to a guided task on that concept. For a fresh attempt, use the matching transfer exercise below in a scratch crate. Make one test for the example and another for a boundary you choose. Explain why the boundary would expose an incorrect implementation. A coach can credit the new work in place of the missed checkpoint when it demonstrates the same skill. Each successful retry replaces at most one result. For a safety-critical retry, reproduce the original failure and verify the original repaired checkpoint as well.
+
+## Fresh transfer exercises
+
+| Module | New assignment | Evidence to demonstrate |
+|---|---|---|
+| Setup and Cargo | Write a depot notice with the parcel number on standard output and the word archived on standard error. | Run and test with parcel 007, then an empty parcel. Show the exact newline on both streams. |
+| Variables and types | Represent an enabled flag, a one-character mode and an unsigned retry count in one tuple. Extract just the mode. | Use false, the character λ and a count of zero. Change only the count and show the mode stays the same. |
+| Numbers and conversions | Quote a price of three cents per item with a u16 item count. Return the total in u32. | Two items cost 6 cents. A count of 65535 costs 196605 cents. |
+| Branching | Admit a rider at least 120 cm tall, or one at least 100 cm tall accompanied by an adult. | Compare 99, 100 and 120 with and without an adult. |
+| Loops | Count the number of times a positive integer can be halved using integer division before reaching zero. | Zero requires zero steps, one requires one and eight requires four. |
+| Functions, strings, and first tests | Produce a luggage label from a name, preserving its case and trimming its outer whitespace. Substitute unclaimed for an empty result. | Predict and test a space-only name and a name containing an internal space. |
+| Moves, Copy, and Drop | Move a String out of a pair and produce an independent copy of the pair’s small numeric ticket number. | Return the original String allocation. Explain why the number stays available after copying. |
+| Shared borrows | Accept a borrowed byte slice and return references to its first and last bytes when both exist. | Empty yields no pair. For one byte the two references point at the same element. |
+| Mutable borrows | Exchange the first and last values in a caller-owned mutable slice and return whether their values changed. | Empty and equal-end slices report false. A slice containing 3, 2, 1 becomes 1, 2, 3. |
+| Arrays, tuples, and slices | Split a borrowed slice at a requested index, returning both sides only if the split is valid. | Test the start, the end and one past the end. The two valid slices reconstruct the original. |
+| Strings and UTF-8 | Borrow all text after the first Unicode scalar. | A single four-byte emoji leaves an empty slice. The word éclair leaves clair. Handle empty input. |
+| Lifetime basics | Return the first field before a separator from a borrowed record, using a separately borrowed delimiter. | Drop the delimiter’s String before using the returned field. Both a found delimiter and a missing delimiter must work. |
+| Structs and methods | Give a counter an advance method that respects its own maximum. | Starting at 9 in a counter capped at 10, two successive advances yield 10 and 10. Another instance stays independent. |
+| Enums and patterns | Model queued, running and finished jobs. Starting a queued job sets running. Other jobs keep their state. | Test all three variants, including preservation of a finished job’s exit code. |
+| Option and Result | Read an optional line containing a decimal u8. Distinguish absent input, malformed input and valid zero. | Produce three different outcomes for None, a nonnumber and 0. Include a value larger than 255. |
+| Standard collections | Count distinct passengers at each station. A passenger can visit more than one station. | Repeated visits to one station count once while a visit to a second station adds to its own total. |
+| Custom errors and ? | Parse two signed numbers and report which side first failed. Multiply valid numbers with checked arithmetic. | Both invalid fields report the left error. Very large valid numbers can produce a separate overflow error. |
+| Modules, visibility, and rustdoc | Expose a ticket type at your crate root while retaining its definition in a private module. | An integration test and a rustdoc example use the same public import path. |
+| Closures | Write a function that uses a supplier closure only when a cache is empty. | A counter captured by the supplier remains zero on a cache hit and reaches one on a miss. |
+| Iterators | Group the lengths of consecutive strictly increasing runs in an iterator of numbers. | Values 1, 3, 3, 4, 2 produce lengths 2, 2, 1. An empty iterator produces no runs. |
+| Generics and const generics | Reverse a fixed-size array by value while preserving its length in the result type. | Use both an empty array and an array of owned Strings. Avoid a Clone bound. |
+| Traits and associated types | Define a source trait with an associated item type. Write one generic function that asks a source for its next item. | Use one source of numbers and one of owned text. Both compile with the same generic function. |
+| Trait objects and coherence | Put two different price policies behind references to the same trait object and apply them in order. | Doubling then adding one to 3 yields 7. Reversing the policies yields 8. |
+| Lifetime-aware APIs | Return the matching stored name that starts with a temporary query prefix. | Drop the query before reading the returned name. Keep a miss distinct from a stored empty name. |
+| Files and buffered I/O | Copy the first two input lines through BufRead and Write without reading a third one into the output. | Test an in-memory buffer with zero lines, three lines and a final line lacking a newline. |
+| CLIs, environment, and subprocesses | Accept an input filename after a flag and report missing values through a nonzero exit status. | An integration test passes a filename containing a space and a separate invocation missing the filename. |
+| Parsing and data formats | Parse a comma-separated record with quoted fields and doubled quote escapes within a field. | Parse a comma inside a quoted field. Reject a missing final quote and show its position. |
+| Networking and framing | Decode a one-byte length followed by that many payload bytes. Keep a partial frame for the next read. | Split one valid frame at every byte boundary and compare all results. Reject the configured oversize length. |
+| Time and portability | Compute whether a retry deadline elapsed using a supplied clock reading. Define equality as due. | Check one tick before, at, and after the deadline without sleeping. |
+| Integration tests | Test a CLI that writes a report file next to its input. | Run two tests simultaneously with independent temporary directories. Assert the bytes and process exit status. |
+| Workspaces and dependencies | Create two local crates, a library and a CLI that depends on its path. Rename the library directory. | Show the Cargo error with the stale path, repair the manifest and run both package tests. |
+| Features, targets, editions, and minimum Rust versions | Gate a detailed report behind an optional feature while retaining a default terse report. | Test with no default features and with the detailed feature. Report the pinned compiler used. |
+| Test design and property tests | Test a reversible byte transformation with generated byte vectors in addition to examples. | Show round-trip equality for empty and arbitrary input. Record a seed or a minimized counterexample for a deliberately broken version. |
+| API compatibility and releasing crates | Add a configurable constructor alongside an established default constructor. | Compile an old consumer unchanged and test a new consumer using the configuration. |
+| Declarative macros | Define a macro that collects caller expressions in order and accepts a trailing comma. | Use side effects to prove each expression is evaluated once. Include an empty invocation. |
+| Procedural macros and build scripts | Generate a count constant from a small data file in a build script. | Change only the data file and rebuild. Show the changed value and the rerun directive that triggered it. |
+| Threads and scoped threads | Sum two halves of a borrowed array in scoped threads. | Compare the result to a serial sum on empty, odd and even lengths. |
+| Send, Sync, and shared ownership | Share an immutable label with two workers and recover ownership after joining them. | Both workers see the same label. Recover the original owned value after the last worker releases it. |
+| Channels and locks | Collect tagged messages from two senders and report per-sender order. | Close both senders and demonstrate deterministic termination with all tags present once. |
+| Atomics and memory ordering | Count independent completed jobs with a shared atomic counter. | Join all workers before reading the final total. Explain which synchronization makes the observation valid. |
+| Futures, Pin, and wakers | Poll a future under a controlled test waker and explicitly transition it from pending to ready. | Observe one pending poll, the expected notification and one ready value without a wall-clock delay. |
+| Tokio, cancellation, and backpressure | Close a bounded input on shutdown while preserving records already accepted. | Send distinct IDs, initiate closure with the queue full, drain and compare the exact accepted set. |
+| Data structures and algorithms | Merge two sorted sequences while preserving repeated elements. | Compare to sorting their concatenation and test one empty side. |
+| Complexity | Replace a repeated linear membership check with a set lookup. | Count equality or lookup operations across increasing inputs and check output equality with the baseline. |
+| Allocations and zero-copy processing | Return token slices into an existing text buffer. | Show that each returned nonempty slice points into the original buffer and survives repeated delimiters. |
+| CPU and memory profiling | Compare two equivalent implementations of repeated text formatting on identical data. | Record profiler settings and a hotspot, make one focused change and remeasure. |
+| Benchmarks and build profiles | Benchmark a single parsing operation in an optimized build. Move fixture creation outside the timed operation. | Report profile, input size, sample count and variation across runs. |
+| Measured optimization | Remove one allocation from a frequently used formatter while preserving its output. | Compare behavior against baseline fixtures and report before-and-after measurements under the same settings. |
+| Layout and alignment | Compare two repr(C) records with the same fields in different orders. | Predict offsets for the current target, measure sizes and alignments, and record the target triple. |
+| Unsafe contracts and raw pointers | In the labeled Linux lab, audit a safe wrapper that exposes a slice subdivision. Write its bounds and aliasing argument before editing. | Exercise zero-length, interior and end splits. Run the repaired wrapper in Miri and explain why the two returned regions cannot overlap. |
+| FFI and ABI | In the labeled FFI lab, expose an output length through a C-compatible record and write down ownership of any pointed-to data. | Compile a caller against the declared ABI. Test an empty result, check field sizes on the documented target and pair allocation with its matching release. |
+| Miri and soundness | In the pinned Miri environment, audit a resource holder that leaks on an early return. | Reproduce the leak, repair ownership on both paths and run both cases under Miri. Explain the destructor’s role. |
+| no_std and cross-compilation | Implement a fixed-buffer encoder using core and return the number of bytes written. | Check for the documented embedded target, then run host tests for exact-fit and too-small buffers. |
+| GATs, variance, and higher-ranked bounds | Define a lending API whose item borrows from each individual call. | Demonstrate two successive uses with the first borrow ending before the second. Explain the lifetime tie. |
+| Cross-platform CLI | Add a command that accepts an explicit output directory using platform path types. | Run the command with spaces in the path, a missing parent and an existing directory. Verify exit status and resulting files. |
+| Reusable parsing library | Extend a parser with comments while preserving source locations in errors. | Show an old valid input still parses, a comment is skipped, and an error after a comment reports the correct location. |
+| Async service | Add a bounded, acknowledged submission queue to a service. | Shut down with work pending. Match acknowledgements to completed IDs and show how overload is reported. |
+| WebAssembly and embedded exercises | Encode the same message in a target-independent fixed buffer. | Compile for the documented target and compare host output to fixed reference bytes for two messages. |
+| Upgrades and incident diagnosis | Reproduce a consumer behavior change after a dependency or toolchain upgrade. | Pin both versions, isolate a minimal distinguishing input, add its regression check and document a compatible fix. |
+| Final transfer assessments | Extend an unfamiliar small crate, investigate an unexpected failure and preserve an existing consumer’s behavior. | Submit the change, minimized failure, a regression test that fails before the repair and a written tradeoff between two fixes. |

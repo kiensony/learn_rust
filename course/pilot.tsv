@@ -1,0 +1,51 @@
+id	title	kind	tags	diagnostics	outcome
+11	Run your first Rust program	implementation	cargo run,println,terminal		assertion: stdout
+12	Give a notice two lines	implementation	stdout,println,sequence		assertion: stdout
+13	Join a label and a value	implementation	print,println,line endings		assertion: stdout
+14	Leave a blank line on a postcard	implementation	blank lines,whitespace		assertion: stdout
+15	Put a name on a ticket	implementation	cargo run --,arguments,formatting		assertion: stdout
+16	Print a measured quantity	implementation	literals,display,units		assertion: stdout
+17	Make quotation marks visible	implementation	escaping,quotation marks		assertion: stdout
+18	Show a Windows-style path	implementation	backslashes,raw strings,paths		assertion: stdout
+19	Read the first compiler message	debugging	syntax,semicolons,cargo check		compiler: expected `;`
+20	Fix a misspelled name	debugging	E0425,name resolution,compiler	E0425	compiler: E0425
+21	Label two arguments	implementation	arguments,placeholders		assertion: stdout
+22	Make braces appear on a help card	implementation	braces,format strings		assertion: stdout
+23	Send a warning to its own stream	implementation	stderr,eprintln,stdout		assertion: output streams
+24	End a prompt at the cursor	implementation	print,prompts,exact output		assertion: stdout
+25	Reuse a value on a badge	implementation	named arguments,formatting		assertion: stdout
+26	Restore the program entry point	debugging	E0601,main,cargo build	E0601	compiler: E0601
+27	Keep the argument out of the template	debugging	format strings,macro diagnostics		compiler: format argument must be a string literal
+28	Repair a cut-off message	debugging	strings,syntax,E0765	E0765	compiler: E0765
+29	Find a shadowed value	debugging	shadowing,arguments,logic error		assertion: stdout
+30	Extract a reusable banner	refactoring	refactoring,functions,stdout		assertion: reusable library item
+31	Set the package version	implementation	Cargo.toml,package metadata,version		assertion: stdout
+32	Use Cargo's package name	implementation	env!,Cargo.toml,package metadata		assertion: stdout
+33	Include the shipped message	implementation	include_str,paths,files		assertion: stdout
+34	Publish an example target	implementation	cargo run --example,targets		assertion: preview example output
+35	Put the package purpose in the manifest	implementation	Cargo.toml,description,metadata		assertion: stdout
+36	Recover a missing module	debugging	E0583,modules,files	E0583	compiler: E0583
+37	Fix an accidental extra terminator	debugging	logic error,include_str,newlines		assertion: stdout
+38	Separate a character from a string	debugging	character literals,strings		compiler: character literal may only contain one codepoint
+39	Restore a missing macro argument	debugging	println,format diagnostics		compiler: 1 positional argument
+40	Share one changing status word	refactoring	refactoring,constants,duplication		assertion: reusable library item
+41	Print a title in columns	implementation	tabs,escape sequences		assertion: stdout
+42	Read the release notes from a different directory	implementation	include_str,relative paths,resources		assertion: stdout
+43	Choose the default binary	implementation	default-run,manifests,cargo run		assertion: default binary output
+44	Read a supplied environment setting	implementation	std::env,var,environment		assertion: stdout
+45	Repair the return type of main	debugging	E0308,return types,unit	E0308	compiler: E0308
+46	Avoid printing the executable path	debugging	arguments,nth,process		assertion: stdout
+47	Give an output separator one owner	refactoring	refactoring,helpers,report layout		assertion: reusable library item
+48	Select a license tag	implementation	Cargo.toml,license,metadata		assertion: stdout
+49	Count the command-line values	implementation	args,cargo run --,count		assertion: stdout
+50	Document the command in its help text	implementation	help,Cargo invocation,usage		assertion: stdout
+51	Close a format placeholder	debugging	format strings,syntax,braces		compiler: invalid format string
+52	Stop a missing argument from panicking	debugging	panic,Option,command line		runtime: missing argument panics
+53	Align the types in a message	debugging	E0308,type annotations,strings	E0308	compiler: E0308
+54	Move a repeated prompt into a shared file	refactoring	refactoring,include_str,resources		assertion: shared prompt file
+55	Replace scattered number formatting	refactoring	refactoring,format!,labels		assertion: reusable library item
+56	Checkpoint: trailhead card	checkpoint	checkpoint,layout,arguments		assertion: stdout
+57	Checkpoint: sort the two streams	checkpoint	checkpoint,stderr,stdout		assertion: output streams
+58	Checkpoint: identify this release	checkpoint	checkpoint,version,Cargo.toml,metadata		assertion: stdout
+59	Checkpoint: exhibit caption	checkpoint	checkpoint,include_str,resources		assertion: stdout
+60	Checkpoint: diagnose a stage cue	checkpoint	checkpoint,debugging,arguments,regression		assertion: stdout

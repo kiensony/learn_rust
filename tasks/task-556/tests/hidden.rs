@@ -1,0 +1,21 @@
+use task_556::*;
+
+#[test]
+fn edge_cases() {
+    assert_eq!(longest_field_with_last_tie_hash("unclosed[cat"), 0);
+    assert_eq!(longest_field_with_last_tie_hash("[]"), 0);
+    assert_eq!(longest_field_with_last_tie_hash("[42]"), 2);
+    assert_eq!(longest_field_with_last_tie_hash("[321]"), 3);
+    assert_eq!(longest_field_with_last_tie_hash("hi#kit"), 0);
+    assert_eq!(longest_field_with_last_tie_hash("#é#a"), 0);
+    assert_eq!(longest_field_with_last_tie_hash(""), 0);
+    assert_eq!(longest_field_with_last_tie_hash("#"), 0);
+    assert_eq!(longest_field_with_last_tie_hash("cat"), 0);
+    assert_eq!(longest_field_with_last_tie_hash("##one#猫#ab"), 0);
+    assert_eq!(longest_field_with_last_tie_hash("aa#bb"), 0);
+}
+
+#[test]
+fn submission_marker() {
+    assert_eq!(task_556::TRACK_PROOF, 0x52540000 | 556);
+}

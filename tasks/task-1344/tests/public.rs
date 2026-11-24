@@ -1,0 +1,7 @@
+use task_1344::*;
+
+#[test]
+fn public_examples() {
+    assert_eq!(packed_booleans_peaks(""), vec![]);
+    assert_eq!(packed_booleans_peaks("1"), vec![1u32]);
+}

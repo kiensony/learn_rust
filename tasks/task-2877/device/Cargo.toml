@@ -1,0 +1,8 @@
+[package]
+name="track-board"
+version="0.1.0"
+edition="2024"
+[workspace]
+
+[dependencies]
+core-sensor={ package="task_2877", path=".." }

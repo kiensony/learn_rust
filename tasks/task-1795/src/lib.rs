@@ -1,0 +1,8 @@
+#![forbid(unsafe_code)]
+
+pub const TRACK_PROOF: u32 = 0;
+
+pub fn token_offset_changes(input: &[u8]) -> Vec<u32> {
+    let _ = input;
+    Vec::new()
+}

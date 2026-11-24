@@ -1,0 +1,61 @@
+stage	module	tags	reading
+First programs	Setup and Cargo	setup cargo run check test stdout	https://doc.rust-lang.org/book/ch01-03-hello-cargo.html
+First programs	Variables and types	let mut bool char tuples	https://doc.rust-lang.org/book/ch03-02-data-types.html
+First programs	Numbers and conversions	integers arithmetic checked conversion	https://doc.rust-lang.org/book/ch03-02-data-types.html
+First programs	Branching	if else comparison	https://doc.rust-lang.org/book/ch03-05-control-flow.html
+First programs	Loops	while loop for range accumulator	https://doc.rust-lang.org/book/ch03-05-control-flow.html
+First programs	Functions, strings, and first tests	fn str return assertions	https://doc.rust-lang.org/book/ch03-03-how-functions-work.html
+Ownership and borrowing	Moves, Copy, and Drop	move copy drop ownership	https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
+Ownership and borrowing	Shared borrows	ref references borrow	https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html
+Ownership and borrowing	Mutable borrows	mut borrow references	https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html
+Ownership and borrowing	Arrays, tuples, and slices	array tuple slice	https://doc.rust-lang.org/book/ch04-03-slices.html
+Ownership and borrowing	Strings and UTF-8	str unicode boundaries	https://doc.rust-lang.org/book/ch08-02-strings.html
+Ownership and borrowing	Lifetime basics	lifetime elision borrow	https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html
+Modeling data and errors	Structs and methods	struct impl fields	https://doc.rust-lang.org/book/ch05-03-method-syntax.html
+Modeling data and errors	Enums and patterns	enum match destructure	https://doc.rust-lang.org/book/ch06-02-match.html
+Modeling data and errors	Option and Result	option result parse	https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html
+Modeling data and errors	Standard collections	vec map set deque	https://doc.rust-lang.org/std/collections/
+Modeling data and errors	Custom errors and ?	error propagation conversion	https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html
+Modeling data and errors	Modules, visibility, and rustdoc	mod pub use rustdoc	https://doc.rust-lang.org/book/ch07-03-paths-for-referring-to-an-item-in-the-module-tree.html
+Reusable Rust	Closures	Fn FnMut FnOnce captures	https://doc.rust-lang.org/book/ch13-01-closures.html
+Reusable Rust	Iterators	map filter fold Iterator	https://doc.rust-lang.org/book/ch13-02-iterators.html
+Reusable Rust	Generics and const generics	const generic arrays	https://doc.rust-lang.org/reference/items/generics.html
+Reusable Rust	Traits and associated types	trait impl associated types	https://doc.rust-lang.org/reference/items/traits.html
+Reusable Rust	Trait objects and coherence	dyn object safety coherence	https://doc.rust-lang.org/reference/types/trait-object.html
+Reusable Rust	Lifetime-aware APIs	lifetime output borrow	https://doc.rust-lang.org/reference/trait-bounds.html
+Working with the system	Files and buffered I/O	file io BufRead Write	https://doc.rust-lang.org/std/io/
+Working with the system	CLIs, environment, and subprocesses	args env process	https://doc.rust-lang.org/std/process/
+Working with the system	Parsing and data formats	parse FromStr bytes	https://doc.rust-lang.org/std/str/trait.FromStr.html
+Working with the system	Networking and framing	tcp framing socket	https://doc.rust-lang.org/std/net/
+Working with the system	Time and portability	duration path platform	https://doc.rust-lang.org/std/time/
+Working with the system	Integration tests	fixture integration tests	https://doc.rust-lang.org/book/ch11-03-test-organization.html
+Tooling and libraries	Workspaces and dependencies	cargo workspace path dependency	https://doc.rust-lang.org/cargo/reference/workspaces.html
+Tooling and libraries	Features, targets, editions, and minimum Rust versions	cfg feature msrv edition	https://doc.rust-lang.org/cargo/reference/features.html
+Tooling and libraries	Test design and property tests	invariants properties test	https://doc.rust-lang.org/book/ch11-01-writing-tests.html
+Tooling and libraries	API compatibility and releasing crates	semver publishing	https://doc.rust-lang.org/cargo/reference/semver.html
+Tooling and libraries	Declarative macros	macro_rules repetition	https://doc.rust-lang.org/reference/macros-by-example.html
+Tooling and libraries	Procedural macros and build scripts	proc-macro build.rs	https://doc.rust-lang.org/cargo/reference/build-scripts.html
+Concurrency and async	Threads and scoped threads	scope join thread	https://doc.rust-lang.org/std/thread/
+Concurrency and async	Send, Sync, and shared ownership	Arc Send Sync	https://doc.rust-lang.org/book/ch16-04-extensible-concurrency-sync-and-send.html
+Concurrency and async	Channels and locks	mpsc Mutex RwLock deadlock	https://doc.rust-lang.org/book/ch16-02-message-passing.html
+Concurrency and async	Atomics and memory ordering	atomic Ordering fetch	https://doc.rust-lang.org/std/sync/atomic/
+Concurrency and async	Futures, Pin, and wakers	Future Pin Poll Waker	https://doc.rust-lang.org/std/future/
+Concurrency and async	Tokio, cancellation, and backpressure	tokio async shutdown	https://tokio.rs/tokio/topics/shutdown
+Algorithms and performance	Data structures and algorithms	search sort queue	https://doc.rust-lang.org/std/collections/
+Algorithms and performance	Complexity	logarithmic binary search	https://doc.rust-lang.org/std/primitive.slice.html
+Algorithms and performance	Allocations and zero-copy processing	buffer slices Cow	https://doc.rust-lang.org/std/borrow/enum.Cow.html
+Algorithms and performance	CPU and memory profiling	profile samples allocations	https://doc.rust-lang.org/rustc/instrument-coverage.html
+Algorithms and performance	Benchmarks and build profiles	bench release black_box	https://doc.rust-lang.org/cargo/reference/profiles.html
+Algorithms and performance	Measured optimization	measurement baseline throughput	https://doc.rust-lang.org/std/time/struct.Instant.html
+Systems Rust	Layout and alignment	layout align padding size	https://doc.rust-lang.org/reference/type-layout.html
+Systems Rust	Unsafe contracts and raw pointers	raw pointer safety invariants	https://doc.rust-lang.org/reference/unsafety.html
+Systems Rust	FFI and ABI	extern C repr ABI	https://doc.rust-lang.org/reference/items/external-blocks.html
+Systems Rust	Miri and soundness	miri provenance aliasing	https://github.com/rust-lang/miri
+Systems Rust	no_std and cross-compilation	core embedded target	https://doc.rust-lang.org/reference/names/preludes.html
+Systems Rust	GATs, variance, and higher-ranked bounds	GAT HRTB variance	https://doc.rust-lang.org/reference/items/associated-items.html
+Applied mastery	Cross-platform CLI	args paths exit status	https://doc.rust-lang.org/book/ch12-00-an-io-project.html
+Applied mastery	Reusable parsing library	str parser error	https://doc.rust-lang.org/std/str/
+Applied mastery	Async service	Future shutdown queue	https://tokio.rs/tokio/topics/shutdown
+Applied mastery	WebAssembly and embedded exercises	wasm embedded bytes	https://doc.rust-lang.org/rustc/platform-support.html
+Applied mastery	Upgrades and incident diagnosis	compatibility regression log	https://doc.rust-lang.org/cargo/reference/resolver.html
+Applied mastery	Final transfer assessments	diagnosis implement regress explain	https://doc.rust-lang.org/book/ch21-00-final-project-a-web-server.html

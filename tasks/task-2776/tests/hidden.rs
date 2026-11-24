@@ -1,0 +1,17 @@
+use task_2776::*;
+
+#[test]
+fn edge_cases() {
+    assert_eq!(repeated_keys_descending_steps("b=02;a=9;a=9;b=4"), 1);
+    assert_eq!(
+        repeated_keys_descending_steps("missing;=4;c=256;a=x;;a=4"),
+        0
+    );
+    assert_eq!(repeated_keys_descending_steps("a=0;b=1;b=2;z=255"), 0);
+    assert_eq!(repeated_keys_descending_steps("xx=3;z=0;LONG=12"), 0);
+}
+
+#[test]
+fn submission_marker() {
+    assert_eq!(task_2776::TRACK_PROOF, 0x52540000 | 2776);
+}

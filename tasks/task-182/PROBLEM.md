@@ -1,0 +1,20 @@
+# task-182 — Comfort zone · returns
+
+Start with the issued count and subtract the returned count. Extra returns leave zero. Use the remaining count as value. Accept values from 5 through 7 inclusive.
+
+```rust
+pub fn comfort_zone_5(issued: u16, returned: u16) -> bool
+```
+
+Implement the public function in `src/lib.rs`.
+
+## Public examples
+
+- `comfort_zone_5(4, 0)` gives `false`.
+- `comfort_zone_5(6, 0)` gives `true`.
+
+## Run this exercise
+
+From the course root, run `cargo test --manifest-path tasks/task-182/Cargo.toml --test public`. After the examples pass, complete the submission step in REVIEW.md and run `cargo track test task-182`.
+
+[Module reading](https://doc.rust-lang.org/book/ch03-05-control-flow.html)

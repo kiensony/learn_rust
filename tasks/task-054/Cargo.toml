@@ -1,0 +1,9 @@
+[package]
+name = "task_054"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+default-run = "task_054"
+
+[workspace]

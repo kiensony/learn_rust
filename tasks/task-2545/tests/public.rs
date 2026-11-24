@@ -1,0 +1,7 @@
+use task_2545::*;
+
+#[test]
+fn public_examples() {
+    assert_eq!(abi_status_mask_changes(&[]), vec![]);
+    assert_eq!(abi_status_mask_changes(&[4]), vec![4u32]);
+}

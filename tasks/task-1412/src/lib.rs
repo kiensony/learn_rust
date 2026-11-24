@@ -1,0 +1,14 @@
+#![forbid(unsafe_code)]
+
+pub const TRACK_PROOF: u32 = 0;
+
+pub fn elapsed_seconds_total(input: &[u8]) -> u64 {
+    let samples: Vec<u32> = {
+        use std::time::Duration;
+        input
+            .iter()
+            .map(|&ticks| Duration::from_millis(u64::from(ticks) * 10).as_secs() as u32)
+            .collect()
+    };
+    samples.into_iter().map(u64::from).sum()
+}

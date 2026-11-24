@@ -1,0 +1,10 @@
+use task_697::*;
+
+#[test]
+fn public_examples() {
+    assert_eq!(
+        leading_marks_removed_hash(Event::Data("outside[red#blue]ignored")),
+        Some(8)
+    );
+    assert_eq!(leading_marks_removed_hash(Event::Data("[猫###a]")), Some(7));
+}

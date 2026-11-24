@@ -1,0 +1,13 @@
+use task_939::*;
+
+#[test]
+fn public_examples() {
+    assert_eq!(
+        prefix_before_final_mark_equals("72;12", |s| s.chars().count() + 1),
+        1
+    );
+    assert_eq!(
+        prefix_before_final_mark_equals("猫=12;note", |s| s.len() * 2),
+        6
+    );
+}

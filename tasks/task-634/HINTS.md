@@ -1,0 +1,3 @@
+Use impl Record for the method. Borrow self to keep the caller’s record intact.
+Try a record containing two adjacent '|' characters. Trace the field chosen by the rule.
+Use the public signature to decide what the caller owns after longest_field_with_last_tie_pipe returns.

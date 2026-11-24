@@ -1,0 +1,1 @@
+Pass when offline Cargo metadata resolves the existing units package, the dependency still uses workspace inheritance, both packages remain members, and all assertions pass. Ask the learner to point from the path in the original error to the responsible manifest entry. The exercise edits package configuration and has no submission marker.

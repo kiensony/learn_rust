@@ -1,0 +1,1 @@
+Require native assertions and the complete pinned Miri run to succeed with leak checking enabled. Require the original signature, safe code, no dummy allocation, and an explanation that follows ownership through the function. Check the new-course submission marker and the learner's first-line comment. This lab tests resource cleanup during normal return.

@@ -1,0 +1,22 @@
+#![forbid(unsafe_code)]
+
+pub const TRACK_PROOF: u32 = 0;
+
+pub fn odd_element_proof_total(input: &[u8]) -> u64 {
+    let samples: Vec<u32> = {
+        let mut samples: Vec<u32> = {
+            let mut owned = input.to_vec();
+            let mut out = vec![];
+            for cell in owned.iter_mut().skip(1).step_by(2) {
+                *cell = cell.wrapping_add(1);
+                out.push(u32::from(*cell));
+            }
+            out
+        };
+        if let Some(first) = samples.first().copied() {
+            samples = vec![first];
+        }
+        samples
+    };
+    samples.into_iter().map(u64::from).sum()
+}

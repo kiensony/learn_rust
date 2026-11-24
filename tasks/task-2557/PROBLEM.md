@@ -1,0 +1,22 @@
+# task-2557 — Split proof · distinct
+
+The starter specializes its intermediate representation in a way that loses information. Generalize it to support every input below. Move the observation step into a private helper and explain the ownership of its result during review.
+
+Exercise a disjoint-mutation contract. Make an owned copy. Mutate the entries beginning at zero-based offset 0, advancing by 2. Increment each visited byte with wrapping arithmetic and observe its new value. Give each entry a unique temporary mutable reference. Run the tests under the course's pinned Miri toolchain and explain why no two live mutation sites alias.
+
+Return distinct observations in ascending order. Use a safe mutable-slice iterator and Miri. During review, point to the operation that enforces its contract.
+
+```rust
+pub fn split_proof_distinct(input: &[u8]) -> Vec<u32>
+```
+
+## Public examples
+
+- `split_proof_distinct(&[])` gives `vec![]`.
+- `split_proof_distinct(&[4])` gives `vec![5u32]`.
+
+## Run this exercise
+
+From the course root, run `cargo test --manifest-path tasks/task-2557/Cargo.toml --test public`. After the examples pass, complete the submission step in REVIEW.md and run `cargo track test task-2557`.
+
+[Module reading](https://github.com/rust-lang/miri)

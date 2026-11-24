@@ -1,0 +1,19 @@
+#![forbid(unsafe_code)]
+
+pub const TRACK_PROOF: u32 = 0;
+
+pub fn failure_threshold_reverse(input: &[u8]) -> Vec<u32> {
+    let samples: Vec<u32> = {
+        let mut samples: Vec<u32> = {
+            input
+                .chunks_exact(2)
+                .map(|p| u32::from(u8::from(p[0] < 100 && p[1] >= 100)))
+                .collect()
+        };
+        if let Some(first) = samples.first().copied() {
+            samples = vec![first];
+        }
+        samples
+    };
+    samples.into_iter().rev().collect()
+}

@@ -1,0 +1,45 @@
+id	title	kind	tags	diagnostics	outcome
+63	Keep a value in scope	debugging	let,mut,bool,char,tuples	E0425	cargo check emits E0425
+69	Reset a busy flag	debugging	let,mut,bool,char,tuples	E0384	cargo check emits E0384
+113	Read an indicator byte	debugging	integers,arithmetic,checked,conversion	E0054	cargo check emits E0054
+119	Double within byte capacity	debugging	integers,arithmetic,checked,conversion	E0689	cargo check emits E0689
+163	Price a printed page	debugging	if,else,comparison	E0317	cargo check emits E0317
+168	Choose a station label	debugging	if,else,comparison	E0308	cargo check emits E0308
+212	Break from the right loop	debugging	while,loop,for,range,accumulator	E0426	cargo check emits E0426
+218	Return the last counter value	debugging	while,loop,for,range,accumulator	E0571	cargo check emits E0571
+262	Convert kitchen scoops	debugging	fn,str,return,assertions	E0061	cargo check emits E0061
+267	Handle an empty name	debugging	fn,str,return,assertions	E0069	cargo check emits E0069
+311	Send a label with its size	debugging	move,copy,drop,ownership	E0382	cargo check emits E0382
+316	Release a ticket explicitly	debugging	move,copy,drop,ownership	E0040	cargo check emits E0040
+360	Count letters without taking a name	debugging	ref,references,borrow	E0507	cargo check emits E0507
+366	Read the first temperature	debugging	ref,references,borrow	E0614	cargo check emits E0614
+410	Append a snapshot of the first item	debugging	mut,borrow,references	E0502	cargo check emits E0502
+416	Move a cursor forward	debugging	mut,borrow,references	E0596	cargo check emits E0596
+460	Read a tuple coordinate	debugging	array,tuple,slice	E0608	cargo check emits E0608
+466	Read a three-pixel strip	debugging	array,tuple,slice	E0527	cargo check emits E0527
+510	Recognize a tab character	debugging	str,unicode,boundaries	E0762	cargo check emits E0762
+516	Count a separator	debugging	str,unicode,boundaries	E0765	cargo check emits E0765
+560	Choose a fallback title	debugging	lifetime,elision,borrow	E0106	cargo check emits E0106
+609	Record both sensor axes	debugging	struct,impl,fields	E0062	cargo check emits E0062
+614	Measure a parcel edge	debugging	struct,impl,fields	E0609	cargo check emits E0609
+658	Describe every traffic light	debugging	enum,match,destructure	E0004	cargo check emits E0004
+663	Measure a packed shipment	debugging	enum,match,destructure	E0023	cargo check emits E0023
+707	Return an optional reading	debugging	option,result,parse	E0005	cargo check emits E0005
+756	Collect a delivery queue	debugging	vec,map,set,deque	E0282	cargo check emits E0282
+805	Convert a parsing error	debugging	error,propagation,conversion	E0277	cargo check emits E0277
+855	Expose a conversion	debugging	mod,pub,use,rustdoc	E0603	cargo check emits E0603
+905	Apply a discount closure	debugging	Fn,FnMut,FnOnce,captures	E0057	cargo check emits E0057
+955	Convert rows to an iterator	debugging	map,filter,fold,Iterator	E0599	cargo check emits E0599
+1004	Return a generic stack array	debugging	const,generic,arrays	E0401	cargo check emits E0401
+1010	Choose the pair type	debugging	const,generic,arrays	E0107	cargo check emits E0107
+1054	Implement the capacity contract	debugging	trait,impl,associated,types	E0046	cargo check emits E0046
+1059	Keep the same receiver contract	debugging	trait,impl,associated,types	E0053	cargo check emits E0053
+1103	Call through a trait object	debugging	dyn,object,safety,coherence	E0782	cargo check emits E0782
+1153	Borrow a prefix from the caller	debugging	lifetime,output,borrow	E0515	cargo check emits E0515
+1203	Update a buffered read count	debugging	file,io,BufRead,Write	E0594	cargo check emits E0594
+1303	Convert a parsed optional port	debugging	parse,FromStr,bytes	E0631	cargo check emits E0631
+1703	Pass a receiver into a macro	debugging	macro_rules,repetition	E0424	cargo check emits E0424
+1803	Keep inputs alive in a worker	debugging	scope,join,thread	E0373	cargo check emits E0373
+2003	Await while reading a future	debugging	Future,Pin,Poll,Waker	E0728	cargo check emits E0728
+2403	Give frame tags unique values	debugging	layout,align,padding,size	E0081	cargo check emits E0081
+2503	Respect the callback ABI	debugging	extern,C,repr,ABI	E0308	cargo check emits E0308

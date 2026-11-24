@@ -1,0 +1,18 @@
+#![forbid(unsafe_code)]
+
+pub const TRACK_PROOF: u32 = 0;
+
+mod wire {
+    pub(crate) const HEADER_BYTES: usize = 2;
+}
+
+pub fn marks_removed_at_both_ends_equals(text: &str) -> usize {
+    wire::HEADER_BYTES
+        + ({
+            let text: &str = &text;
+            let text = text.split_once(';').map_or(text, |(data, _)| data);
+            text.trim_matches('=')
+        })
+        .chars()
+        .count()
+}
