@@ -1,0 +1,7 @@
+[package]
+name = "task_058"
+version = "1.3.0"
+edition = "2024"
+publish = false
+
+[workspace]

@@ -1,0 +1,27 @@
+// rust-track: handwritten task-2479
+#![forbid(unsafe_code)]
+
+pub const TRACK_PROOF: u32 = 0x52540000 | 2479;
+
+pub fn strided_raw_reads_longest_run(input: &[u8]) -> u64 {
+    let samples = observe_strided_raw_reads(input);
+    let (mut previous, mut run, mut longest) = (None, 0u64, 0);
+    for x in samples {
+        run = if previous == Some(x) { run + 1 } else { 1 };
+        longest = longest.max(run);
+        previous = Some(x);
+    }
+    longest
+}
+
+fn observe_strided_raw_reads(input: &[u8]) -> Vec<u32> {
+    let base = input.as_ptr();
+    (0..input.len())
+        .step_by(2)
+        .map(|i| {
+            let ptr = base.wrapping_add(i);
+            debug_assert_eq!(ptr, &input[i] as *const u8);
+            u32::from(input[i])
+        })
+        .collect()
+}

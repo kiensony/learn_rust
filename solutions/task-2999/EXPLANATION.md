@@ -1,0 +1,1 @@
+The first record beyond capacity disappeared during shutdown. Splitting the owned vector at the accepted count retains the pending suffix and its order. The regression recombines both vectors for every possible capacity. With a bounded channel, the producer can reserve capacity before transferring ownership and retain the record when reservation fails.

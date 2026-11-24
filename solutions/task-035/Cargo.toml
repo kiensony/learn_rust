@@ -1,0 +1,8 @@
+[package]
+name = "task_035"
+version = "0.1.0"
+edition = "2024"
+publish = false
+description = "Counts seats on the ferry"
+
+[workspace]

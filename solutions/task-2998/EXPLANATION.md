@@ -1,0 +1,1 @@
+The asymmetric bytes 0x12 and 0x34 decode to different integers in the two versions. Checking the three-byte shape first gives malformed packets the promised length error. Dispatching on the explicit tag preserves the old byte order. Guessing a version from the payload could silently change an existing record’s value.

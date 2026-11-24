@@ -1,0 +1,10 @@
+// rust-track: handwritten task-2235
+#![forbid(unsafe_code)]
+
+pub const TRACK_PROOF: u32 = 0x52540000 | 2235;
+
+pub fn zero_copy_lines_changes(input: &str) -> Vec<u32> {
+    let mut samples: Vec<u32> = { input.lines().map(|l| l.len() as u32).collect() };
+    samples.dedup();
+    samples
+}

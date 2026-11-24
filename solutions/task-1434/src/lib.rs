@@ -1,0 +1,32 @@
+// rust-track: handwritten task-1434
+#![forbid(unsafe_code)]
+
+pub const TRACK_PROOF: u32 = 0x52540000 | 1434;
+
+pub fn timer_windows_peaks(input: &[u8]) -> Vec<u32> {
+    let samples = observe_timer_windows(input);
+    let mut peak = None;
+    samples
+        .into_iter()
+        .filter(|&x| {
+            if peak.is_none_or(|p| x > p) {
+                peak = Some(x);
+                true
+            } else {
+                false
+            }
+        })
+        .collect()
+}
+
+fn observe_timer_windows(input: &[u8]) -> Vec<u32> {
+    use std::time::Duration;
+    input
+        .iter()
+        .map(|&ticks| {
+            Duration::from_millis(u64::from(ticks) * 17)
+                .as_millis()
+                .div_ceil(100) as u32
+        })
+        .collect()
+}

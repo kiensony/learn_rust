@@ -1,0 +1,1 @@
+Splitting the input between a length byte and the last byte of its payload exposed the loss. The cursor now advances only after a whole frame has been consumed. The regression tries every split point and compares the reassembled stream with decoding it in one call. Copying the tail lets the caller discard or reuse the original receive buffer immediately.
