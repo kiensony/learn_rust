@@ -2,6 +2,8 @@
 
 Start with [Run your first Rust program](tasks/task-011/PROBLEM.md). You’ll print a message, edit one line, and use a test to check exactly what changed. You can start with an empty programming notebook and a text editor.
 
+![Rust course learning curve, from guided practice to independent checkpoints in every module](course/learning-curve.svg)
+
 ## Your first session
 
 Install Rust using [rustup](https://rustup.rs/). Open a terminal in this repository, the folder containing this README. The first Cargo command can take a few minutes to download the course’s pinned compiler.
